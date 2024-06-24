@@ -3,7 +3,6 @@ from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from predictor import get_predictions
-import json
 
 app = FastAPI()
 
