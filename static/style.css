@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
@@ -8,48 +8,72 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    line-height: 1.6; /* Improve readability with better line height */
 }
 
 .container {
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 600px;
     width: 100%;
     text-align: left;
+    overflow: auto; /* Add scroll if content overflows */
 }
+
 
 h1, h2 {
     color: #444;
+    margin-bottom: 10px; /* Add some space below headers */
 }
 
 textarea {
-    width: 90%;
-    height: 22px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    font-size: 16px;
-    margin-bottom: 20px;
+    width: 95%; /* Make the textarea take up the full width of its container */
+    height: 50px; /* Increase initial height for better usability */
+    padding: 12px; /* Slightly increase padding */
+    border-radius: 5px; /* Round the corners of the textarea */
+    border: 1px solid #ddd; /* Add a solid border with a light gray color */
+    font-size: 16px; /* Set the font size of the text inside the textarea */
+    margin-bottom: 20px; /* Add a bottom margin to the textarea */
+    line-height: 1.5; /* Improve readability with better line height */
+    resize: vertical; /* Allow users to resize the height of the textarea */
+    transition: border-color 0.3s ease, height 0.3s ease; /* Smooth transition for border color and height change */
 }
+
 
 ul {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-direction: row; /* Align items in a column */
+    gap: 10px; /* Add spacing between list items */
+    height: 32px;
 }
 
 li {
     background-color: #f4f4f9;
     padding: 10px;
-    margin: 5px;
+    margin: 0; /* Remove margin handled by ul */
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    justify-content: center;
 }
 
 li:hover {
-    background-color: #e0e0e5;
+    background-color: aquamarine;;
 }
 
+li > * {
+    flex: 1; /* Equally distribute the space */
+    text-align: center; /* Center align the text within each child */
+}
+
+li > *:not(:last-child) {
+    margin-right: 10px; /* Add space between items */
+}
