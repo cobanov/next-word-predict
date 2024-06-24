@@ -1,12 +1,12 @@
-import torch
 import string
-from transformers import RobertaTokenizer, RobertaForMaskedLM
 
-# Load pre-trained model and tokenizer
+import torch
+from transformers import RobertaForMaskedLM, RobertaTokenizer
+
 tokenizer = RobertaTokenizer.from_pretrained("roberta-large")
 model = RobertaForMaskedLM.from_pretrained("roberta-large").eval()
 
-TOP_K = 10  # Number of top predictions to consider
+TOP_K = 10
 
 
 def decode_predictions(tokenizer, pred_indices, top_clean):
