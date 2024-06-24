@@ -6,6 +6,11 @@ from transformers import RobertaTokenizer, RobertaForMaskedLM
 roberta_tokenizer = RobertaTokenizer.from_pretrained("roberta-large")
 roberta_model = RobertaForMaskedLM.from_pretrained("roberta-large").eval()
 
+# from transformers import BertTokenizer, BertForMaskedLM
+
+# roberta_tokenizer = BertTokenizer.from_pretrained("dbmdz/bert-base-turkish-cased")
+# roberta_model = BertForMaskedLM.from_pretrained("dbmdz/bert-base-turkish-cased").eval()
+
 top_k = 10
 
 
