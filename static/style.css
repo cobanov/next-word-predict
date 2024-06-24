@@ -1,5 +1,5 @@
 body {
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
@@ -38,6 +38,13 @@ textarea {
     line-height: 1.5; /* Improve readability with better line height */
     resize: vertical; /* Allow users to resize the height of the textarea */
     transition: border-color 0.3s ease, height 0.3s ease; /* Smooth transition for border color and height change */
+}
+
+#information {
+    color:#777;
+    font-size: 12px; /* Add some space below headers */
+    margin-bottom: 0px; /* Add some space below headers */
+    padding: 0px;
 }
 
 
