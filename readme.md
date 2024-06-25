@@ -2,7 +2,7 @@
 
 This is a FastAPI application that provides text prediction functionality using a pre-trained RoBERTa model. The application serves a static HTML file and exposes an endpoint for generating text predictions.
 
-![alt text](assets/animation.gif)
+![alt text](assets/Animation.gif)
 
 ## Run the application
 
